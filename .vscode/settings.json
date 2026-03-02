@@ -1,0 +1,16 @@
+{
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.parameterHints.enabled": true,
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": null,
+  "java.format.onType.enabled": false,
+"editor.wordBasedSuggestions": "matchingDocuments",
+"java.compile.nullAnalysis.mode": "automatic",
+"java.configuration.updateBuildConfiguration": "interactive",
+"files.trimTrailingWhitespaceInRegexAndStrings": false
+}

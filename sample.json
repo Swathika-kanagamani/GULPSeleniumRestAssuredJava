@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "John",
+      "location": "india",
+      "phone": "1234567890",
+      "courses": ["Java", "Selenium"]
+    },
+    {
+      "id": "2",
+      "name": "Kim",
+      "location": "us",
+      "phone": "9876543210",
+      "courses": ["Java", "Selenium"]
+    },
+    {
+      "id": "047b",
+      "name": "Pradeep",
+      "location": "india",
+      "phone": "98439824",
+      "courses": ["C#", ".Net", "DS", "Microservices"]
+    },
+    {
+      "id": "f1b2",
+      "name": "POJOSwathika",
+      "location": "Pojoloc",
+      "phoneNumber": "831921",
+      "courses": ["data entry", "look"]
+    }
+  ]
+}

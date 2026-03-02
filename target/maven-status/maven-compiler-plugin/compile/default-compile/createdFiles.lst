@@ -1,0 +1,4 @@
+com\selenium\utils\DriverFactory.class
+com\selenium\pages\SearchPage.class
+com\selenium\pages\LoginPage.class
+com\selenium\pages\DashboardPage.class
