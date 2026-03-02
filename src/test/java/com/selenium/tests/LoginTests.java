@@ -1,20 +1,19 @@
 package com.selenium.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.selenium.pages.LoginPage;
 import com.selenium.pages.DashboardPage;
-import java.io.FileInputStream;
-import java.util.Properties;
 
 public class LoginTests extends BaseTest {
 
     private String password;
 
-    public LoginTests() throws Exception {
-        Properties properties = new Properties();
-        properties.load(new FileInputStream("config.properties"));
-        this.password = properties.getProperty("password");
+    @BeforeMethod
+    public void loadPassword() {
+        // use properties loaded by BaseTest
+        password = properties.getProperty("password");
     }
 
     @Test
