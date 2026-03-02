@@ -48,6 +48,22 @@ target/                    # Maven build output
    ```
    TestNG configuration is defined in `testng.xml`. You can adjust suites or add parameters as needed.
 
+### 🛠️ Running with a custom configuration file
+By default the tests load `config.properties` from the working directory. You can override
+this file at runtime by supplying the `configFile` system property to Maven. This allows
+switching environments (dev/qa/stage/etc.) without changing source code.
+
+```bash
+# example: use a specific properties file anywhere on disk
+mvn "-DconfigFile=C:\Users\swath\GULPSeleniumRestAssuredJava\config.properties" test
+```
+
+You may also supply additional `-D` properties to override individual values, e.g.:
+
+```bash
+mvn "-DconfigFile=src/test/resources/myenv.properties" -Durl=http://example.com test
+```
+
 ## Test Reports
 
 After running tests, TestNG reports are generated under `target/surefire-reports/`. The HTML report can be opened in a browser:
